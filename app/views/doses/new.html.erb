@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>New dose</h1>
+  <%= simple_form_for ([@cocktail, @dose]) do |f| %>
+    <%= f.input :description %>
+
+    <%= f.error_notification message: "Please select an ingredient from the list" %>
+    <%= f.input :ingredient_id, collection: Ingredient.all, input_html: { multiple: false } %>
+
+    <%= f.button :submit, class: "btn btn-primary" %>
+  <% end %>
+</div>

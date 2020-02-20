@@ -5,5 +5,6 @@
 
   <% @cocktails.each do |cocktail| %>
    <p class="mt-2"> <%= cocktail.name %> </p>
+   <%= link_to "See details", cocktail_path(cocktail) %>
   <% end %>
 </div>
