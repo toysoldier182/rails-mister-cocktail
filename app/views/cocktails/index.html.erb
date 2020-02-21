@@ -1,10 +1,21 @@
-<div class="container mt-4">
-  <h1>All cocktails</h1>
-
-  <%= link_to "+Create new cocktail", new_cocktail_path, class: "mb-4 pb-4" %>
-
-  <% @cocktails.each do |cocktail| %>
-   <p class="mt-2"> <%= cocktail.name %> </p>
-   <%= link_to "See details", cocktail_path(cocktail) %>
-  <% end %>
+<div class="home-banner">
+  <h1>mr.joad's mocktails</h1>
+   <%= link_to "+Create new cocktail", new_cocktail_path, class: "mb-4 pb-4" %>
 </div>
+
+  <div class="container">
+    <h3 class="mt-4 text-center">All of our cocktails</h3>
+    <div class="card-grid">
+      <% @cocktails.each do |cocktail| %>
+      <div class="card mt-4">
+        <img src="https://source.unsplash.com/random/?drink" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><%= cocktail.name %></h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <%= link_to "See details", cocktail_path(cocktail), class: "btn btn-primary" %>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+

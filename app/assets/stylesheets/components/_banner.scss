@@ -1,0 +1,55 @@
+.home-banner {
+  background-image: url('https://source.unsplash.com/1600x900/?restaurant');
+  background-size: cover;
+  height: 100vh;
+  color: #eee;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+.home-banner-container {
+  text-align: center;
+  height: calc(100vh - 66px);
+  padding-top: 20vh;
+  background-color: tomato;
+}
+
+.banner-content {
+  margin: 0 auto;
+  width: 80%;
+  height: 80%;
+  p.top-left {
+    top: 5px;
+    left: 5px;
+  }
+
+  p.top-right {
+    top: 5px;
+    right: 5px;
+  }
+
+  p.bottom-right {
+    bottom: 5px;
+    right: 5px;
+  }
+
+  p.bottom-left {
+    bottom: 5px;
+    left: 5px;
+  }
+}
+
+
+.banner-img {
+  background-image: url('https://source.unsplash.com/random/?drink');
+  max-width: 250px;
+  margin: 0 auto;
+  background-fit: cover;
+  z-index: 100;
+}
+
+.banner-title {
+  z-index: 200;
+}
+
+
